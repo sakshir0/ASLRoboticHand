@@ -60,11 +60,11 @@ def trainer(folder):
         filename = 'data/{}/train_{}.csv'.format(folder, chr(i + 97))
         train(filename, chr(i + 97))
 
-trainer('fuckyou2')
-train('data/fuckyou2/train_next.csv', 'next')
-train('data/fuckyou2/train_back.csv', 'back')
+trainer('p2')
+train('data/p2/train_next.csv', 'next')
+train('data/p2/train_back.csv', 'back')
 
-# train('data/fuckyou/train_a.csv', 'a')
+# train('data/p1/train_a.csv', 'a')
 # train('data/roll/train_c.csv', 'c')
 # train('data/roll/train_n.csv', 'n')
 # train('data/roll/train_o.csv', 'o')
@@ -83,10 +83,10 @@ dump(clf, 'lettermodel.joblib')
 
 
 # for i in range(26):
-#     test('data/fuckyou2/test_{}.csv'.format(chr(i + 97)))
+#     test('data/p2/test_{}.csv'.format(chr(i + 97)))
 
-test('data/fuckyou2/mystery1.csv')
-test('data/fuckyou2/mystery2.csv')
+test('data/p2/mystery1.csv')
+test('data/p2/mystery2.csv')
 
 # test('data/test/test_a.csv')
 # test('data/test/test_b.csv')
